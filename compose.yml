@@ -1,0 +1,14 @@
+version: '3'
+services:
+  varuna:
+    image: "varunapriyas/22it052-docker"
+    container_name: varunapriya_container
+    restart: always
+    ports:
+      - "5001:5000"
+  aarthi:
+    image: "aarthi1015/22it001-docker"
+    container_name: aarthi_container
+    restart: always
+    ports:
+      - "5002:5000"
