@@ -1,0 +1,17 @@
+name: docker-pipeline-varunapriya
+on: push
+jobs:
+  docker-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print your Register Number
+        run: echo "Hello World - 22IT052"
+        
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Docker Build
+        run: docker build -t varunapriyas/ml-model-22IT052 .
+
+      - name: Docker Images
+        run: docker images
