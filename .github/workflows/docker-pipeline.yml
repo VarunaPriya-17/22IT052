@@ -24,4 +24,3 @@ jobs:
 
       - name: Docker Push
         run: docker push -t varunapriyas/ml-model-22it052
-
