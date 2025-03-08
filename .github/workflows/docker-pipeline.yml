@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Docker Build
-        run: docker build -t varunapriyas/ml-model-22IT052 .
+        run: docker build -t varunapriyas/ml-model-22it052 .
 
       - name: Docker Images
         run: docker images
